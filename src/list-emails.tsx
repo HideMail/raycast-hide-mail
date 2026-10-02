@@ -180,7 +180,7 @@ const ListEmails = () => {
                   <Action
                     title={isShowingDetail ? "Hide Details" : "Show Details"}
                     icon={Icon.Sidebar}
-                    shortcut={{ modifiers: ["cmd"], key: "d" }}
+                    shortcut={{ macOS: { modifiers: ["cmd"], key: "d" }, Windows: { modifiers: ["ctrl"], key: "d" } }}
                     onAction={() => setIsShowingDetail(!isShowingDetail)}
                   />
                   <Action.OpenInBrowser
